@@ -1,0 +1,4 @@
+{
+    "MarRobot.Servo|block": "舵机|%index|角度 %degree",
+    "MarRobot.Servospeed|block": "舵机|%index|开始角度 %degree1|结束角度 %degree2|旋转速度 %speed"
+}

@@ -1,22 +1,15 @@
 {
-    "name": "MSP_Rover",
+    "name": "MarRobot",
     "version": "1.0.0",
     "description": "Mars Scholar Project Rover Lab expansion board for micro:bit",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "neopixel": "github:marsscholar/RGB-Neopixel#v0.7.4"
+        "core": "*"
     },
     "files": [
         "README.md",
-        "MSP_Rover.ts",
-        "MSP_Rover.cpp",
-        "ReceiverIR.cpp",
-        "ReceiverIR.h",
-        "RemoteIR.h",
-        "TransmitterIR.cpp",
-        "TransmitterIR.h",
-        "_locales/zh/MSP_Rover-strings.json"
+        "MarRobot.ts",
+        "_locales/zh/MarRobot-strings.json"
     ],
     "testFiles": [
         "test.ts"
