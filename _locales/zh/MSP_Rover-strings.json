@@ -1,0 +1,65 @@
+{
+    "MSP_Rover.RoverRGBInit|block": "MSP_Rover初始化",
+    "MSP_Rover.Servo|block": "舵机|%index|角度 %degree",
+    "MSP_Rover.Servospeed|block": "舵机|%index|开始角度 %degree1|结束角度 %degree2|旋转速度 %speed",
+    "MSP_Rover.GetServoDegree|block": "获取舵机|%index|角度(0~180)",
+    "MSP_Rover.SportMotorRun|block": "运动电机|%index|速度 %speed",
+    "MSP_Rover.MotorRunDual|block": "运动电机|%motor1|速度 %speed1|%motor2|速度 %speed2",
+    "MSP_Rover.SportMotorRunDelay|block": "运动电机|%index|速度 %speed|延时 %delay|s",
+    "MSP_Rover.SportMotorStop|block": "停止运动电机|%index|",
+    "MSP_Rover.MotorStopAll|block": "停止所有运动电机",
+    
+    "MSP_Rover.ClampMotorRun|block": "夹持电机|%index|速度 %speed",
+    "MSP_Rover.ClampMotorRunDelay|block": "夹持电机|%index|速度 %speed|延时 %delay|s",
+    "MSP_Rover.ClampMotorStop|block": "停止夹持电机|%index|",
+
+    "MSP_Rover.Ultrasonic|block": "引脚 %pin 读取RGB超声波距离(cm)",
+    "RgbColors.None|block": "无",
+    "RgbColors.Red|block": "红",
+    "RgbColors.Orange|block": "橙",
+    "RgbColors.Yellow|block": "黄",
+    "RgbColors.Green|block": "绿",
+    "RgbColors.Blue|block": "蓝",
+    "RgbColors.Indigo|block": "靛蓝",
+    "RgbColors.Violet|block": "紫罗兰",
+    "RgbColors.Purple|block": "紫",
+    "RgbColors.White|block": "白",
+    "RgbColors.Black|block": "黑",
+    "RgbUltrasonics.Left|block": "左边",
+    "RgbUltrasonics.Right|block": "右边",
+    "RgbUltrasonics.All|block": "全部",
+    "ColorEffect.None|block": "无",
+    "ColorEffect.Breathing|block": "呼吸灯",
+    "ColorEffect.Rotate|block": "旋转流星",
+    "ColorEffect.Flash|block": "闪烁",
+    "MSP_Rover.RUS_04|block": "RGB超声波|%RgbUltrasonics|显示颜色%rgb|特效%effect",
+    "MSP_Rover.rgb|block": "板载RGB",
+    "MSP_Rover.SetBrightness|block": "设置板载RGB亮度 %bright",
+    "MSP_Rover.SetColor|block": "设置板载RGB|%rgb 颜色为|%rgbColor",
+    "MSP_Rover.ClearRgb|block": "关闭彩灯",
+
+    "MSP_Rover.I2cLcdInit|block": "LCD1602初始化I2C地址(默认为39) $addr",
+	"MSP_Rover.I2cLcdShowString|block": "LCD1602 从第 $y| 行 $x| 列 显示 $s",
+	"MSP_Rover.I2cLcdOn|block": "打开显示",
+	"MSP_Rover.I2cLcdOff|block": "关闭显示",
+	"MSP_Rover.I2cLcdClear|block": "清除显示",
+	"MSP_Rover.I2cLcdBacklightOn|block": "打开背光",
+	"MSP_Rover.I2cLcdBacklightOff|block": "关闭背光",
+
+    "MSP_Rover.RotaryPotentiometer|block": "引脚 %pin 获取旋转电位计的模拟值",
+
+    "MSP_Rover.Init|block": "红外遥控器初始化引脚|%pin",
+    "MSP_Rover.OnPressEvent|block": "当红外遥控器按键|%btn|按下",
+
+    "MSP_Rover.HumanBodySensor|block": " 引脚 %bodypin 检测到人体红外信号 ",
+    "MSP_Rover.ReadSoilHumidity|block": " 引脚 %soilhumiditypin 获取的土壤湿度值(0~1000)",
+
+    "MSP_Rover.DHT11Type.DHT11_humidity|block": "湿度(0~100)",
+    "MSP_Rover.DHT11Type.DHT11_temperature_C|block": "摄氏温度(℃)",
+    "MSP_Rover.DHT11Type.DHT11_temperature_F|block": "华氏温度(℉)",
+    "MSP_Rover.Dht11value|block": "引脚 %dht11pin|获取 %dht11type",
+
+    "MSP_Rover.IoTInit|block": "物联网初始化",
+    "MSP_Rover.AIVisionInit|block": "AI视觉初始化"
+    
+}

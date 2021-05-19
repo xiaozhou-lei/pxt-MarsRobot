@@ -1,0 +1,19 @@
+{
+    "name": "MSP_Rover",
+    "version": "1.0.0",
+    "description": "Mars Scholar Project Rover Lab expansion board for micro:bit",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "MarsRobot.ts",
+        "_locales/zh/MSP_Rover-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "preferredEditor": "tsprj"
+}
