@@ -145,6 +145,12 @@ namespace MSP_Rover {
     export enum Servos {
          S1 = 0x01,
          S2 = 0x02,
+		 S3 = 0x03,
+         S4 = 0x04,
+		 S5 = 0x05,
+         S6 = 0x06,
+		 S7 = 0x07,
+         S8 = 0x08,
         
     }
 
@@ -442,14 +448,10 @@ namespace MSP_Rover {
     //% subcategory="执行器_Actuator"
     export function Servo(index: Servos, degree: number): void {
         let buf = pins.createBuffer(2);
-        buf[0] = 0x07;
-        buf[1] = 0xc8;
+        buf[0] = index;
+        buf[1] = Math.round(Math.map(degree, 0, 180, 50, 250));
         pins.i2cWriteBuffer(0x14, buf);
-        basic.pause(2000);
-        buf[0] = 0x07;
-        buf[1] = 0x64;
-        pins.i2cWriteBuffer(0x14, buf);
-        basic.pause(2000);
+        
         // if (!initialized) {
         //     initPCA9685()
         // }
