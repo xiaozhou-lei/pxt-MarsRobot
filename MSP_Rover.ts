@@ -441,18 +441,27 @@ namespace MSP_Rover {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     //% subcategory="执行器_Actuator"
     export function Servo(index: Servos, degree: number): void {
-        if (!initialized) {
-            initPCA9685()
-        }
-        // 50hz: 20,000 us
-        let v_us = (degree * 1800 / 180 + 600) // 0.6 ~ 2.4
-        let value = v_us * 4096 / 20000;
-        if (index == 0x01) {
-            servo1Degree = degree;
-        } else if (index == 0x02) {
-            servo2Degree = degree;
-        }
-        setPwm(index + 7, 0, value)
+        let buf = pins.createBuffer(2);
+        buf[0] = 0x07;
+        buf[1] = 0xc8;
+        pins.i2cWriteBuffer(0x14, buf);
+        basic.pause(2000);
+        buf[0] = 0x07;
+        buf[1] = 0x64;
+        pins.i2cWriteBuffer(0x14, buf);
+        basic.pause(2000);
+        // if (!initialized) {
+        //     initPCA9685()
+        // }
+        // // 50hz: 20,000 us
+        // let v_us = (degree * 1800 / 180 + 600) // 0.6 ~ 2.4
+        // let value = v_us * 4096 / 20000;
+        // if (index == 0x01) {
+        //     servo1Degree = degree;
+        // } else if (index == 0x02) {
+        //     servo2Degree = degree;
+        // }
+        // setPwm(index + 7, 0, value)
     }
 
     /**
