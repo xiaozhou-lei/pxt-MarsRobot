@@ -41,7 +41,7 @@ namespace MarRobot {
     //% subcategory="执行器_Actuator"
     export function Servo(index: Servos, degree: number): void {
         let buf = pins.createBuffer(3);
-		buf[0] = 0x00;
+		buf[0] = 0x01;
         buf[1] = index;
         buf[2] = Math.round(Math.map(degree, 0, 180, 50, 250));
         pins.i2cWriteBuffer(MarRobot_IICADDRESS, buf);
@@ -110,7 +110,7 @@ namespace MarRobot {
 	
 	function MotorRun(index: number, speed: number): void {
 		let buf = pins.createBuffer(3);
-		buf[0] = 0x01;
+		buf[0] = 0x00;
         buf[1] = index;
         buf[2] = speed;
         pins.i2cWriteBuffer(MarRobot_IICADDRESS, buf);
