@@ -1,4 +1,10 @@
 {
     "MarRobot.Servo|block": "舵机|%index|角度 %degree",
-    "MarRobot.Servospeed|block": "舵机|%index|开始角度 %degree1|结束角度 %degree2|旋转速度 %speed"
+    "MarRobot.Servospeed|block": "舵机|%index|开始角度 %degree1|结束角度 %degree2|旋转速度 %speed",
+    "MarRobot.GetServoDegree|block": "获取舵机|%index|角度(0~180)",
+    "MarRobot.SportMotorRun|block": "运动电机|%index|速度 %speed",
+    "MarRobot.MotorRunDual|block": "运动电机|%motor1|速度 %speed1|%motor2|速度 %speed2",
+    "MarRobot.SportMotorRunDelay|block": "运动电机|%index|速度 %speed|延时 %delay|s",
+    "MarRobot.SportMotorStop|block": "停止运动电机|%index|",
+    "MarRobot.MotorStopAll|block": "停止所有运动电机"
 }
