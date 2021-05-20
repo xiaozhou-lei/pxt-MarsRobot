@@ -105,7 +105,7 @@ namespace MarRobot {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     //% subcategory="执行器_Actuator"
     export function SportMotorRun(index: Motors, speed: number): void {
-        MotorRun(index, number);
+        MotorRun(index, speed);
     }
 	
 	function MotorRun(index: number, speed: number): void {
@@ -169,6 +169,20 @@ namespace MarRobot {
 
     export function MotorStop(index: number): void {
         MotorRun(index, 0);
+    }
+	
+	//% blockId=roverbit_stop_all block="Motor Stop All" group="Motor 电机"
+    //% weight=79
+    //% blockGap=50
+    //% subcategory="执行器_Actuator"
+    export function MotorStopAll(): void {
+        if (!initialized) {
+            initPCA9685()
+        }
+        for (let idx = 1; idx <= 8; idx++) {
+            if (idx != 5 && idx != 6)
+            stopMotor(idx);
+        }
     }
 
 }
