@@ -177,7 +177,7 @@ namespace MarRobot {
     //% subcategory="执行器_Actuator"
     export function MotorStopAll(): void {
         for (let idx = 0; idx < 8; idx++) {
-             MotorRun(index, 0);
+             MotorRun(idx, 0);
         }
     }
 
