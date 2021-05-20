@@ -176,12 +176,8 @@ namespace MarRobot {
     //% blockGap=50
     //% subcategory="执行器_Actuator"
     export function MotorStopAll(): void {
-        if (!initialized) {
-            initPCA9685()
-        }
-        for (let idx = 1; idx <= 8; idx++) {
-            if (idx != 5 && idx != 6)
-            stopMotor(idx);
+        for (let idx = 0; idx < 8; idx++) {
+             MotorRun(index, 0);
         }
     }
 
