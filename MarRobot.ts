@@ -9,11 +9,7 @@ namespace MarRobot {
          S1 = 0x00,
          S2 = 0x01,
 		 S3 = 0x02,
-         S4 = 0x03,
-		 S5 = 0x04,
-         S6 = 0x05,
-		 S7 = 0x06,
-         S8 = 0x07
+         S4 = 0x03
     }
 	
 	export enum Motors {
